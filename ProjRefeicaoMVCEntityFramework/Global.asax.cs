@@ -12,8 +12,6 @@ namespace ProjRefeicaoMVCEntityFramework
 	{
 		protected void Application_Start()
 		{
-			System.Globalization.CultureInfo ci = new System.Globalization.CultureInfo("en-US");
-			System.Threading.Thread.CurrentThread.CurrentCulture = ci;
 			AreaRegistration.RegisterAllAreas();
 			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
